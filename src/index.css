@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-body: #F3F4F8;
+    --bg-sidebar: #0F1629;
+    --bg-card: #FFFFFF;
+    --text-primary: #0B1120;
+    --text-secondary: #475569;
+    --text-sidebar: #94A3B8;
+    --accent-blue: #4F46E5;
+    --accent-light-blue: rgba(79, 70, 229, 0.05);
+    --accent-green: #22C55E;
+    --accent-light-green: #DCFCE7;
+    --accent-orange: #F59E0B;
+    --accent-light-orange: #FEF3C7;
+    --accent-red: #EF4444;
+    --accent-light-red: #FEE2E2;
+    --border-color: #E2E8F0;
+
+    --radius: 0.625rem;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 239 84% 59%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 239 84% 59%;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@layer utilities {
+  .transition-default {
+    transition: all 0.2s ease-in-out;
+  }
+}
